@@ -1,0 +1,509 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	background-color: #DBCFC1;
+}
+
+a {
+    text-decoration: none; /* Remove underline from all links */
+    color: inherit; /* Use the inherited color of the parent element */
+}
+
+/* Header Styles */
+header {
+    background-color: #DBCFC1;
+    height: 20vh;
+	max-height: 100px;
+    padding: 10px 10px 0 0;
+    box-sizing: border-box;
+	justify-content: center;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Full height of the header */
+}
+
+/* Hide the large header text by default (small screens) */
+.header-large {
+    display: none;
+}
+
+.logo {
+    height: 100%; /* Adjust as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
+h1 {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    color: #707070; /* Text color */
+    margin: 0;
+    font-size: 2em; /* Adjust as needed for responsiveness */
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #DBCFC1; /* Match header background */
+    width: 100%;
+    height: 10vh; /* Fixed height for PC display */
+	max-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the navigation */
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between; /* Evenly space items */
+    width: 100%; /* Full width to evenly space items */
+    max-width: 800px; /* Max width for better spacing */
+}
+
+nav li {
+    flex: 1; /* Allow items to grow and shrink */
+    text-align: center; /* Center text in each item */
+}
+
+nav a {
+    text-decoration: none;
+    color: #707070; /* Default text color for links */
+    font-family: 'Georgia', serif;
+    font-size: 1em; /* Adjust as needed */
+}
+
+nav a:hover, nav a.active {
+    color: #CE8043; /* Orange color for active or hover */
+    text-decoration: underline; /* Underline on hover or active */
+}
+
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow from the video */
+}
+
+.hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the container */
+}
+
+.hero-text {
+    position: absolute;
+    right: 20px; /* Align text towards the right */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    text-align: right; /* Align text to the right */
+    color: white; /* Text color */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 20px; /* Space inside the background */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 50%; /* Adjust as needed */
+    font-family: 'Georgia', serif; /* Georgia font for text */
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #CE8043; /* Button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px; /* Space above button */
+    font-family: 'Dubai', sans-serif; /* Dubai font for button */
+}
+
+.hero-button:hover {
+    background-color: #A65E3C; /* Darker button color on hover */
+}
+
+/* Welcome Section Styles */
+.welcome {
+    background-color: #DBCFC1; /* Background color */
+    border: 10px solid #CE8043; /* Orange border */
+    padding: 30px 20px 0px 20px; /* Add padding inside the section */
+    position: relative; /* For positioning the logo */
+    overflow: hidden; /* Ensure content does not overflow the section */
+}
+
+.welcome-content {
+    position: relative; /* Ensure the content stays above the background */
+    z-index: 1; /* Make sure content is above the background logo */
+}
+
+.welcome h2 {
+    font-family: 'Georgia', serif; /* Header font */
+    color: #707070; /* Text color */
+    margin: 0 0 20px 0; /* Margin below header */
+    font-size: 2em; /* Adjust as needed */
+}
+
+.welcome p {
+    font-family: 'Dubai', sans-serif; /* Body text font */
+    color: #707070; /* Text color */
+    font-size: 1em; /* Adjust as needed */
+    line-height: 1.6; /* Spacing between lines */
+}
+
+.semi-transparent-logo {
+    position: absolute;
+    right: -50px; /* Align logo to the right */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    height: 80%; /* Height less than the section height */
+    opacity: 0.1; /* Semi-transparent effect */
+    pointer-events: none; /* Ensure logo doesn't interfere with text */
+}
+
+/* Services Section Styles */
+.services {
+    padding: 20px; /* Adjust padding for mobile */
+    display: flex;
+    flex-direction: column; /* Stack service boxes vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 20px; /* Space between boxes */
+}
+/* Service Box Styles */
+.service-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.service-button {
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    width: 80vw; /* Adjust width for mobile */
+    height: auto; /* Adjust height for mobile */
+    text-align: center;
+    background-color: white; /* Default background */
+    border: 15px solid #707070; /* Default border color, smaller for mobile */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    text-decoration: none;
+    color: #707070; /* Default text color */
+    font-family: 'Georgia', serif; /* Font for text */
+    position: relative;
+}
+
+.service-button:hover {
+    background-color: #093E60; /* Background color on hover */
+    border-color: #093E60; /* Border color on hover */
+	color: white
+}
+
+.service-button .service-icon {
+    width: 25%; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+	max-height: 100px;
+	padding: 10px 0 0 0;
+}
+
+.service-button .default-icon {
+    display: block; /* Show default icon */
+}
+
+.service-button .hover-icon {
+    display: none; /* Hide hover icon by default */
+}
+
+/* Show the hover icon when the button is hovered */
+.service-button:hover .default-icon {
+    display: none; /* Hide default icon */
+}
+
+.service-button:hover .hover-icon {
+    display: block; /* Show hover icon */
+}
+
+.service-button span {
+    display: block;
+    margin-top: 10px; /* Space between icon and text */
+    font-family: 'Georgia', serif; /* Font for text */
+    color: #707070; /* Default text color */
+}
+
+.service-button:hover span {
+    color: white; /* Text color on hover */
+}
+
+/* Footer Styles */
+footer {
+    padding: 20px;
+    background-color: #DBCFC1; /* Match footer background color to the rest of the site */
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Stack footer content vertically on mobile */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Footer Left Side */
+.footer-info {
+    flex: 1; /* Allow this to take up available space */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between items */
+}
+
+footer h2 {
+    font-family: 'Georgia', serif; /* Heading font */
+    font-size: 45px; /* Heading font size */
+    color: #707070; /* Heading text color */
+    margin: 0 0 10px 0; /* Margin below heading */
+}
+
+.footer-item {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin-bottom: 10px; /* Space between items */
+}
+
+.footer-item img {
+    margin-right: 10px; /* Space between icon and text */
+    height: 24px; /* Set a standard size for icons */
+    width: 24px; /* Set a standard size for icons */
+}
+
+.footer-item p {
+    font-family: 'Dubai', sans-serif; /* Text font */
+    font-size: 1.5em; /* Text font size */
+    color: #707070; /* Text color */
+    margin: 0; /* No margin around text */
+}
+
+/* Footer Right Side */
+.footer-images {
+    display: grid; /* Use grid layout for images */
+    grid-template-columns: 1fr; /* Stack images vertically on mobile */
+    gap: 10px; /* Space between images */
+    max-width: 100%; /* Full width for mobile */
+    margin-top: 20px; /* Space above images */
+	justify-items: center;
+}
+
+.footer-images img {
+    width: 100%; /* Ensure images fit within their grid cells */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Specific image sizes */
+.footer-img-cat-friendly {
+    max-width: 100%; /* Example size for a specific image */
+}
+
+.footer-img-fear-free {
+    max-width: 90%; /* Example size for a specific image */
+}
+
+.footer-img-low-stress {
+    max-width: 70%; /* Example size for a specific image */
+}
+
+.footer-img-partners {
+    max-width: 60%; /* Example size for a specific image */
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+	.header-small {
+        display: none;
+    }
+
+    .header-large {
+        display: inline;
+    }
+	/* Services Section Styles */
+    .services {
+        flex-direction: row; /* Stack service boxes horizontally */
+        flex-wrap: wrap; /* Allow wrapping if necessary */
+        gap: 20px; /* Space between boxes */
+		justify-content: center;
+    }
+
+    /* Service Box Styles */
+    .service-button {
+        width: 25vw; /* Adjust width for tablets and desktops */
+        height: 200px; /* Adjust height for tablets and desktops */
+        border: 30px solid #707070; /* Larger border for tablets and desktops */
+    }
+	
+	footer {
+		padding: 100px;
+		background-color: #DBCFC1; /* Match footer background color to the rest of the site */
+	}
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    /* Footer Right Side */
+    .footer-content {
+        flex-direction: row; /* Arrange footer content horizontally */
+        justify-content: space-between; /* Space between left and right side */
+    }
+
+    .footer-images {
+        grid-template-columns: repeat(2, 45%); /* Two columns */
+        max-width: 40%; /* Limit width to prevent overflow */
+        margin-top: 0; /* Remove top margin */
+    }
+}
+
+/* About Page Specific Styles */
+
+/* Default (Mobile First) */
+.mission-statement,
+.meet-our-team {
+    border: 5px solid #CE8043; /* Orange border */
+    padding: 20px; /* Padding inside the sections */
+    margin: 20px; /* Space around the sections */
+}
+
+.mission-statement h2,
+.meet-our-team h3 {
+    font-family: 'Georgia', serif; /* Heading font */
+    color: #707070; /* Text color */
+    margin: 0 0 10px 0; /* Margin below heading */
+}
+
+.mission-statement p,
+.meet-our-team p {
+    font-family: 'Dubai', sans-serif; /* Text font */
+    color: #707070; /* Text color */
+    font-size: 1em; /* Adjust as needed */
+    line-height: 1.6; /* Spacing between lines */
+}
+
+.meet-our-team {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack team members vertically */
+    gap: 20px; /* Space between team members */
+    align-items: center; /* Center items horizontally */
+}
+
+.team-member {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 10px; /* Space between image and text */
+}
+
+.team-member img {
+    width: 75vw; /* Image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20%; /* Circular images */
+}
+
+.team-member div {
+    flex: 1; /* Allow text to take available space */
+}
+
+/* Tablet and Larger Screens */
+@media (min-width: 768px) {
+    .meet-our-team {
+        flex-direction: row; /* Stack team members horizontally */
+        align-items: flex-start; /* Align items to the top */
+    }
+
+    .team-member {
+        flex-direction: row; /* Align image and text horizontally */
+    }
+
+    .team-member img {
+        width: 250px; /* Image size */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Adjust for larger screens */
+}
+
+/* Services Section (Mobile First) */
+.services-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.service-box-page {
+    display: flex;
+    flex-direction: column; /* Stack icon and text vertically on mobile */
+    align-items: center; /* Center items horizontally */
+    width: 90%;
+    background-color: #093E60; /* Blue background */
+    color: white;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Ensures that content does not overflow */
+}
+
+.service-icon-page {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px; /* Space between icon and text */
+}
+
+.service-content-page {
+    text-align: center; /* Center text horizontally */
+    max-width: 100%;
+}
+
+.service-content-page h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    margin: 0;
+}
+
+.service-content-page p {
+    font-family: Dubai, sans-serif;
+    font-size: 16px;
+    margin: 10px 0 0;
+}
+
+/* Responsive Styles for Larger Screens */
+@media (min-width: 768px) {
+    .service-box-page {
+        flex-direction: row; /* Align icon and content horizontally on larger screens */
+        align-items: center; /* Center items vertically */
+    }
+
+    .service-icon-page {
+        margin-right: 20px; /* Space between icon and text */
+        margin-bottom: 0; /* Remove bottom margin on larger screens */
+    }
+
+    .service-content-page {
+        text-align: left; /* Align text to the left on larger screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .service-content-page h2 {
+        font-size: 36px; /* Adjust heading size for larger screens */
+    }
+
+    .service-content-page p {
+        font-size: 18px; /* Adjust text size for larger screens */
+    }
+}
