@@ -30,11 +30,6 @@ header {
     height: 100%; /* Full height of the header */
 }
 
-/* Hide the large header text by default (small screens) */
-.header-large {
-    display: none;
-}
-
 .logo {
     height: 100%; /* Adjust as needed */
     width: auto; /* Maintain aspect ratio */
