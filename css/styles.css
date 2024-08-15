@@ -115,13 +115,14 @@ nav a:hover, nav a.active {
 .hero-button {
     display: inline-block;
     padding: 10px 20px;
-    font-size: 1.25em;
+    font-size: auto;
     background-color: #CE8043; /* Button color */
     color: white;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px; /* Space above button */
     font-family: 'Dubai', sans-serif; /* Dubai font for button */
+	text-align: end;
 }
 
 .hero-button:hover {
