@@ -40,7 +40,8 @@ h1 {
     font-weight: bold;
     color: #707070; /* Text color */
     margin: 0;
-    font-size: 2em; /* Adjust as needed for responsiveness */
+    font-size: 1.5em; /* Adjust as needed for responsiveness */
+	word-wrap: break-word;
 }
 
 /* Navigation Styles */
@@ -318,13 +319,9 @@ footer h2 {
 
 /* Tablet */
 @media (min-width: 768px) {
-	.header-small {
-        display: none;
-    }
-
-    .header-large {
-        display: inline;
-    }
+	h1 {
+		font-size: 2em;
+	}
 	/* Services Section Styles */
     .services {
         flex-direction: row; /* Stack service boxes horizontally */
