@@ -157,7 +157,7 @@ nav a:hover, nav a.active {
 
 .semi-transparent-logo {
     position: absolute;
-    right: -50px; /* Align logo to the right */
+    right: 0px; /* Align logo to the right */
     top: 50%; /* Center vertically */
     transform: translateY(-50%); /* Adjust for vertical centering */
     height: 80%; /* Height less than the section height */
@@ -172,12 +172,6 @@ nav a:hover, nav a.active {
     flex-direction: column; /* Stack service boxes vertically */
     align-items: center; /* Center items horizontally */
     gap: 20px; /* Space between boxes */
-}
-/* Service Box Styles */
-.service-buttons {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
 }
 
 .service-button {
@@ -195,12 +189,15 @@ nav a:hover, nav a.active {
     color: #707070; /* Default text color */
     font-family: 'Georgia', serif; /* Font for text */
     position: relative;
+	box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
 }
 
 .service-button:hover {
     background-color: #093E60; /* Background color on hover */
     border-color: #093E60; /* Border color on hover */
-	color: white
+	color: white;
+	box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 1s;
 }
 
 .service-button .service-icon {
