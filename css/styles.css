@@ -38,7 +38,7 @@ header {
 h1 {
     font-family: 'Georgia', serif;
     font-weight: bold;
-    color: #707070; /* Text color */
+    color: #575757; /* Text color */
     margin: 0;
     font-size: 1.5em; /* Adjust as needed for responsiveness */
 	word-wrap: break-word;
@@ -73,7 +73,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #707070; /* Default text color for links */
+    color: #575757; /* Default text color for links */
     font-family: 'Georgia', serif;
     font-size: 1em; /* Adjust as needed */
 }
@@ -81,6 +81,7 @@ nav a {
 nav a:hover, nav a.active {
     color: #CE8043; /* Orange color for active or hover */
     text-decoration: underline; /* Underline on hover or active */
+	font-weight: bold;
 }
 
 /* Hero Section Styles */
@@ -114,7 +115,7 @@ nav a:hover, nav a.active {
 .hero-button {
     display: inline-block;
     padding: 10px 20px;
-    font-size: 1em;
+    font-size: 1.25em;
     background-color: #CE8043; /* Button color */
     color: white;
     text-decoration: none;
@@ -143,14 +144,14 @@ nav a:hover, nav a.active {
 
 .welcome h2 {
     font-family: 'Georgia', serif; /* Header font */
-    color: #707070; /* Text color */
+    color: #575757; /* Text color */
     margin: 0 0 20px 0; /* Margin below header */
     font-size: 2em; /* Adjust as needed */
 }
 
 .welcome p {
     font-family: 'Dubai', sans-serif; /* Body text font */
-    color: #707070; /* Text color */
+    color: #575757; /* Text color */
     font-size: 1em; /* Adjust as needed */
     line-height: 1.6; /* Spacing between lines */
 }
@@ -183,10 +184,10 @@ nav a:hover, nav a.active {
     height: auto; /* Adjust height for mobile */
     text-align: center;
     background-color: white; /* Default background */
-    border: 15px solid #707070; /* Default border color, smaller for mobile */
+    border: 15px solid #575757; /* Default border color, smaller for mobile */
     transition: background-color 0.3s, border-color 0.3s, color 0.3s;
     text-decoration: none;
-    color: #707070; /* Default text color */
+    color: #575757; /* Default text color */
     font-family: 'Georgia', serif; /* Font for text */
     position: relative;
 	box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
@@ -197,7 +198,7 @@ nav a:hover, nav a.active {
     border-color: #093E60; /* Border color on hover */
 	color: white;
 	box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
-	transition: box-shadow 1s;
+	transition: all 0.2s ease-in;
 }
 
 .service-button .service-icon {
@@ -228,7 +229,7 @@ nav a:hover, nav a.active {
     display: block;
     margin-top: 10px; /* Space between icon and text */
     font-family: 'Georgia', serif; /* Font for text */
-    color: #707070; /* Default text color */
+    color: #575757; /* Default text color */
 }
 
 .service-button:hover span {
@@ -258,8 +259,8 @@ footer {
 
 footer h2 {
     font-family: 'Georgia', serif; /* Heading font */
-    font-size: 45px; /* Heading font size */
-    color: #707070; /* Heading text color */
+    font-size: 1.5em; /* Heading font size */
+    color: #575757; /* Heading text color */
     margin: 0 0 10px 0; /* Margin below heading */
 }
 
@@ -277,8 +278,8 @@ footer h2 {
 
 .footer-item p {
     font-family: 'Dubai', sans-serif; /* Text font */
-    font-size: 1.5em; /* Text font size */
-    color: #707070; /* Text color */
+    font-size: 1.25em; /* Text font size */
+    color: #575757; /* Text color */
     margin: 0; /* No margin around text */
 }
 
@@ -331,12 +332,20 @@ footer h2 {
     .service-button {
         width: 25vw; /* Adjust width for tablets and desktops */
         height: 200px; /* Adjust height for tablets and desktops */
-        border: 30px solid #707070; /* Larger border for tablets and desktops */
+        border: 30px solid #575757; /* Larger border for tablets and desktops */
     }
 	
 	footer {
 		padding: 100px;
 		background-color: #DBCFC1; /* Match footer background color to the rest of the site */
+	}
+	
+	footer h2 {
+		font-size: 2em;
+	}
+	
+	footer p {
+		font-size: 1.5em;
 	}
 }
 
@@ -368,14 +377,14 @@ footer h2 {
 .mission-statement h2,
 .meet-our-team h3 {
     font-family: 'Georgia', serif; /* Heading font */
-    color: #707070; /* Text color */
+    color: #575757; /* Text color */
     margin: 0 0 10px 0; /* Margin below heading */
 }
 
 .mission-statement p,
 .meet-our-team p {
     font-family: 'Dubai', sans-serif; /* Text font */
-    color: #707070; /* Text color */
+    color: #575757; /* Text color */
     font-size: 1em; /* Adjust as needed */
     line-height: 1.6; /* Spacing between lines */
 }

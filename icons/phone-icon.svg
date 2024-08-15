@@ -1,1 +1,24 @@
-<?xml version="1.0" ?><svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><rect fill="none" height="256" width="256"/><path d="M92.5,124.8a83.6,83.6,0,0,0,39,38.9,8,8,0,0,0,7.9-.6l25-16.7a7.9,7.9,0,0,1,7.6-.7l46.8,20.1a7.9,7.9,0,0,1,4.8,8.3A48,48,0,0,1,176,216,136,136,0,0,1,40,80,48,48,0,0,1,81.9,32.4a7.9,7.9,0,0,1,8.3,4.8l20.1,46.9a8,8,0,0,1-.6,7.5L93,117A8,8,0,0,0,92.5,124.8Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #575757;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 16px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.6.0, SVG Export Plug-In . SVG Version: 1.2.0 Build 709)  -->
+  <g>
+    <g id="Layer_1">
+      <rect class="cls-2" width="256" height="256"/>
+      <path class="cls-1" d="M92.5,124.8c8.2,17,22,30.7,39,38.9,2.6,1.2,5.6,1,7.9-.6l25-16.7c2.2-1.5,5.1-1.8,7.6-.7l46.8,20.1c3.3,1.4,5.3,4.8,4.8,8.3-3.1,24-23.5,41.9-47.6,41.9-75.1,0-136-60.9-136-136,0-24.1,17.9-44.5,41.9-47.6,3.5-.5,6.9,1.5,8.3,4.8l20.1,46.9c1.1,2.4.8,5.3-.6,7.5l-16.7,25.4c-1.5,2.3-1.7,5.3-.5,7.8Z"/>
+    </g>
+  </g>
+</svg>
